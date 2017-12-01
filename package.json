@@ -10,6 +10,7 @@
     "start:client": "webpack-dev-server --config webpack.client.config.js",
     "start:server": "nodemon src/server/server.js --exec babel-node",
     "build:server1": "webpack --config webpack.server.config.js --progress --colors",
+    "build:server2": "webpack --config webpack.server.config.1.js --progress --colors",
     "build:server": "babel src/client -d dist/client && babel src/server -d dist/server",
     "serve": "node dist/server/server.js"
   },

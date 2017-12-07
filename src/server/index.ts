@@ -1,10 +1,10 @@
-import path from 'path';
+import * as path from 'path';
 // import webpack from 'webpack';
 // import webpackMiddleware from 'webpack-dev-middleware';
-import express, { Express } from 'express';
+import * as express from 'express';
 // import config from '../../webpack.config.js';
 
-const server: Express = express();
+const server = express();
 // const compiler = webpack(config);
 
 

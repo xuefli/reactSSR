@@ -13,7 +13,7 @@
       "allowJs": true,
       "jsx": "react",
 
-      "rootDir": "src/server",      
+      // "rootDir": "src/server",      
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
       "noImplicitThis": true,

@@ -7,6 +7,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const nodeExternals = require('webpack-node-externals');
+
 console.log(`process.env.NODE_ENV: + ${process.env.NODE_ENV}`);
 
 function resolve (dir) {
@@ -24,6 +26,7 @@ module.exports = {
     publicPath: '/',
   },
   target: 'node',
+  externals: [nodeExternals()],
   module: {
     rules: [
       {

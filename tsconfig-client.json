@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
-      "outDir": "dist/server",
-      "module": "commonjs",
+      "outDir": "dist/client",
+      "module": "esnext",
       "target": "es5",
       "lib": [
         "es2015",
@@ -9,11 +9,11 @@
         "es2017",
         "dom"
       ],
-      "sourceMap": false,
+      "sourceMap": true,
       "allowJs": true,
       "jsx": "react",
-
-      // "rootDir": "src/server",      
+      "moduleResolution": "node",
+      "rootDir": "src/client",
       "forceConsistentCasingInFileNames": true,
       "noImplicitReturns": true,
       "noImplicitThis": true,
@@ -22,12 +22,12 @@
       "allowUnreachableCode": false,
       "suppressImplicitAnyIndexErrors": true,
       "noUnusedLocals": true,
-      "isolatedModules": true,
+      "allowSyntheticDefaultImports": true,
       "noUnusedParameters": true,
-      "skipDefaultLibCheck": true
+      "noEmitOnError": true,
+      "skipLibCheck": true
     },
     "include": [
-      "./src/server/**/*",
       "./src/client/**/*"
     ],
     "exclude": [

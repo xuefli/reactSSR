@@ -1,37 +1,30 @@
 {
-    "compilerOptions": {
-      "outDir": "dist/client",
-      "module": "esnext",
-      "target": "es5",
-      "lib": [
-        "es2015",
-        "es2016",
-        "es2017",
-        "dom"
-      ],
-      "sourceMap": true,
-      "allowJs": true,
-      "jsx": "react",
-      "moduleResolution": "node",
-      "rootDir": "src/client",
-      "forceConsistentCasingInFileNames": true,
-      "noImplicitReturns": true,
-      "noImplicitThis": true,
-      "noImplicitAny": true,
-      "strictNullChecks": true,
-      "allowUnreachableCode": false,
-      "suppressImplicitAnyIndexErrors": true,
-      "noUnusedLocals": true,
-      "allowSyntheticDefaultImports": true,
-      "noUnusedParameters": true,
-      "noEmitOnError": true,
-      "skipLibCheck": true
-    },
-    "include": [
-      "./src/client/**/*",
-    ],
-    "exclude": [
-      "./node_modules",
-      "./dist"
-    ]
-  }
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

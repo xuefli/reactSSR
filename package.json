@@ -12,14 +12,20 @@
     "build:server1": "webpack --config webpack.server.config.js --progress --colors",
     "build:server2": "webpack --config webpack.server.config.1.js --progress --colors",
     "build:server": "babel src/client -d dist/client && babel src/server -d dist/server",
-    "serve": "node dist/server/server.js"
+    "build:ts": "tsc -p tsconfig-server.json",
+    "serve": "node dist/server/server.js",
+    "build": "webpack --progress --colors --watch"
   },
   "dependencies": {
+    "@types/isomorphic-fetch": "^0.0.34",
     "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-loadable": "^5.3.1",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2"
   },
   "devDependencies": {
@@ -27,8 +33,10 @@
     "@types/node": "^8.0.53",
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
+    "@types/react-loadable": "^5.3.0",
     "@types/react-redux": "^5.0.14",
     "@types/react-router": "^4.0.19",
+    "@types/react-router-dom": "^4.2.3",
     "@types/redux": "^3.6.0",
     "@types/webpack": "^3.8.1",
     "@types/webpack-dev-middleware": "^1.9.4",
